@@ -150,16 +150,16 @@
 </div>
 
 <script type="text/javascript">
-{
-    const flist = JSON.parse(`[{"name":"二狗","bio":"一条狗","avatar":"../images/ergou.webp","link":"#"}]`);
-    let friendNodes = '';
-    while (flist.length > 0) {
-        const rndNum = Math.floor(Math.random()*flist.length);
-        friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar || 'https://cdn.jsdelivr.net/gh/Candinya/Kratos-Rebirth/source/images/avatar.webp'}"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio || ''}</p></a></li>`;
-        flist.splice(rndNum, 1);
-    }
-    document.getElementById("friendsList").innerHTML = friendNodes;
-}
+// {
+//     const flist = JSON.parse(`[{"name":"二狗","bio":"一条狗","avatar":"../images/ergou.webp","link":"#"}]`);
+//     let friendNodes = '';
+//     while (flist.length > 0) {
+//         const rndNum = Math.floor(Math.random()*flist.length);
+//         friendNodes += `<li><a target="_blank" href="${flist[rndNum].link}"><img src="${flist[rndNum].avatar || 'https://cdn.jsdelivr.net/gh/Candinya/Kratos-Rebirth/source/images/avatar.webp'}"><h4>${flist[rndNum].name}</h4><p>${flist[rndNum].bio || ''}</p></a></li>`;
+//         flist.splice(rndNum, 1);
+//     }
+//     document.getElementById("friendsList").innerHTML = friendNodes;
+// }
 </script>
         </div>
         <footer class="kratos-entry-footer clearfix">
