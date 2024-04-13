@@ -3,7 +3,7 @@ title: 安装phpRedisAdmin
 published: 2024-04-13
 tags: [phpRedisAdmin, docker, docker-compose]
 category: 安装
-draft: true
+draft: false
 ---
 
 # 安装phpRedisAdmin
