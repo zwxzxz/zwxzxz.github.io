@@ -20,7 +20,7 @@ draft: false
 
 3. 寻找占用大的目录
 
-   <img src="https://zwx-blog-oss.oss-cn-hangzhou.aliyuncs.com/blog/image-20240415185514907.png" alt="排查2.png" style="zoom:80%;" >
+   <img src="https://zwx-blog-oss.oss-cn-hangzhou.aliyuncs.com/blog/image-20240415185353337.png" alt="排查2.png" style="zoom:80%;" >
    
    果然，log占用29G，openvpn.log占用26G
 
