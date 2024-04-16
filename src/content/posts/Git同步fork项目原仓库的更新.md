@@ -2,7 +2,7 @@
 title: Git同步fork项目原仓库的更新
 published: 2024-04-15
 tags: [Git, GitHub]
-category: 问题
+category: 迎刃而解
 draft: false
 ---
 
