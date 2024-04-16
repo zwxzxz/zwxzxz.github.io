@@ -20,13 +20,17 @@ draft: false
 
 3. 寻找占用大的目录
 
-   <img src="排查2.png" alt="排查2" style="zoom:67%;" />	
+   <img src="排查2.png" alt="排查2" style="zoom:67%;" />
+
+   <img src="排查2.png" width="50%" height="50%">
+
+   ![test image size](排查2.png){:height="50%" width="50%"}
 
    果然，log占用29G，openvpn.log占用26G
 
    ![排查3](排查3.png)	
 
-4. 删除文件
+5. 删除文件
 
    ```sh
    # 删除文件时，建议使用 cat /dev/null > 方式进行删除，不建议使用 rm。使用 rm 方式删除的文件，可能不能被对应服务进程释放掉，该文件所占用的空间也就不会被释放。
