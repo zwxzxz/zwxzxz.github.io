@@ -20,11 +20,7 @@ draft: false
 
 3. 寻找占用大的目录
 
-   <img src="排查2.png" alt="排查2" style="zoom:67%;" />
-
-   <img src="排查2.png" width="50%" height="50%">
-
-   ![test image size](排查2.png){:height="50%" width="50%"}
+   ![test image size](排查2.png)
 
    果然，log占用29G，openvpn.log占用26G
 
@@ -37,5 +33,21 @@ draft: false
    > cat /dev/null > openvpn.log
    ```
 
-   
+- `<img>`标签添加图片
+<img src="https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png" alt="这是一张摩托车图片">
+- `alt`属性 - 这里图片链接错误，图片无法载入，所以显示了`alt`属性的文本
+<img src="https://ucc.alicdn.com/images/user-upload-01/" alt="这是一张摩托车图片">
+- `height、width`属性 - 指定宽高为150
+<img src="https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png" width=150 height=150>
+- `<div>` 标签的`align`属性 - 使图片和文本居中，左对齐`left`，右对齐`right`
+<div align=center>
+<img src="https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png">
+<br>摩托车图片</div>
+
+- 下图是居中显示-图片默认插入方式
+![图片描述](https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png#pic_center)
+- 下图是左对齐显示
+![图片描述](https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png#pic_left)
+- 下图是右对齐显示
+![图片描述](https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png#pic_right)
 
