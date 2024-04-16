@@ -24,7 +24,7 @@ draft: false
    
    果然，log占用29G，openvpn.log占用26G
 
-   ![排查3](排查3.png)	
+   ![排查3](排查3.png)
 
 5. 删除文件
 
