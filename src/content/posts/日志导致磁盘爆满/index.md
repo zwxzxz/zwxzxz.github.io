@@ -45,9 +45,14 @@ draft: false
 <br>摩托车图片</div>
 
 - 下图是居中显示-图片默认插入方式
+![图片描述](https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png)
+
 ![图片描述](https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png#pic_center)
+
 - 下图是左对齐显示
+
 ![图片描述](https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png#pic_left)
+
 - 下图是右对齐显示
 ![图片描述](https://ucc.alicdn.com/images/user-upload-01/98ceaf6910c441d6b18ac3565cbb82b8.png#pic_right)
 
