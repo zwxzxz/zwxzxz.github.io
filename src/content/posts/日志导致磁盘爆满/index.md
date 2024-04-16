@@ -22,6 +22,11 @@ draft: false
 
    ![test image size](排查2.png)
 
+   <img src="排查2.png" alt="排查2.png" width=150 height=150>
+
+   <img src="https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg" alt="排查2.png" style="zoom:50%;" >
+   
+
    果然，log占用29G，openvpn.log占用26G
 
    ![排查3](排查3.png)	
@@ -32,25 +37,4 @@ draft: false
    # 删除文件时，建议使用 cat /dev/null > 方式进行删除，不建议使用 rm。使用 rm 方式删除的文件，可能不能被对应服务进程释放掉，该文件所占用的空间也就不会被释放。
    > cat /dev/null > openvpn.log
    ```
-
-- `<img>`标签添加图片
-<img src="https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg" alt="这是一张摩托车图片">
-- `height、width`属性 - 指定宽高为150
-<img src="https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg" width=150 height=150>
-- `<div>` 标签的`align`属性 - 使图片和文本居中，左对齐`left`，右对齐`right`
-<div align=center>
-<img src="https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg">
-<br>摩托车图片</div>
-
-- 下图是居中显示-图片默认插入方式
-![图片描述1](https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg)
-
-![图片描述2](https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg#pic_center)
-
-- 下图是左对齐显示
-
-![图片描述3](https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg#pic_left)
-
-- 下图是右对齐显示
-![图片描述4](https://zwxkx.oss-cn-hangzhou.aliyuncs.com/avatar1.jpeg#pic_right)
 
