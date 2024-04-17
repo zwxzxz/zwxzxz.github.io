@@ -6,8 +6,6 @@ category: 安装教程
 draft: false
 ---
 
-## 源码安装Redis
-
 ### 安装依赖
 
 ```sh
