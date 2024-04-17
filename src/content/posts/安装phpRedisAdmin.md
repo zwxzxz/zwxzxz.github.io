@@ -6,8 +6,6 @@ category: 安装教程
 draft: false
 ---
 
-# 安装phpRedisAdmin
-
 ## Docker-compose安装
 
 创建docker-compose文件: phpRedisAdmin.yml
