@@ -1,5 +1,5 @@
 ---
-title: 磁盘爆满及解决
+title: 磁盘爆满排查及解决
 published: 2024-04-16
 description: 日志文件过大导致磁盘爆满
 tags: [磁盘, 问题, Linux]
@@ -7,8 +7,6 @@ image: ./排查1.png
 category: 迎刃而解
 draft: false
 ---
-
-# 日志导致磁盘爆满
 
 1. Jenkins打包报错
 
