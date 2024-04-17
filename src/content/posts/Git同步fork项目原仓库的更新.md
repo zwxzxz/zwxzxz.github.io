@@ -6,8 +6,6 @@ category: 迎刃而解
 draft: false
 ---
 
-# Git同步fork项目原仓库的更新
-
 1. 查看当前仓库配置的远程仓库
 
    ```sh
