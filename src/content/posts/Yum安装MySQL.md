@@ -6,8 +6,6 @@ category: 安装教程
 draft: false
 ---
 
-## Yum安装MySQL
-
 ### 卸载mariadb
 
 列出安装的mariadb rpm 包
@@ -30,10 +28,10 @@ rpm -e --nodeps mariadb-libs
 >
 > 简要说明：
 >
-> mysql80：标识 MySQL8.0版本的配置包
-> community-release：表明这是 MySQL 社区版的发布包，非商业版
-> el7：代表这个包适用于基于 Red Hat Enterprise Linux 7 或与其兼容的操作系统，比如 CentOS 7
-> 11：可能是该配置包的版本号
+> mysql80：标识 MySQL8.0版本的配置包 
+> community-release：表明这是 MySQL 社区版的发布包，非商业版 
+> el7：代表这个包适用于基于 Red Hat Enterprise Linux 7 或与其兼容的操作系统，比如 CentOS 7 
+> 11：可能是该配置包的版本号  
 > noarch：表示这是一个与架构无关的包，也就是说它可以在任意 CPU 架构的 CentOS 7 系统上安装
 
 ```sh
@@ -69,7 +67,7 @@ mysql-community-icu-data-files-8.0.28 \
 mysql-community-server-8.0.28 
 ```
 
-`注`：
+**注**：
 
 安装报错：由于GPG密钥验证问题
 
