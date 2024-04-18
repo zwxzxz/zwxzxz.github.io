@@ -141,4 +141,47 @@ update user set host='%' where user='root';
 flush privileges;
 ```
 
+## 调优MySQL
+
+> 修改 `/etc/my.cnf` 文件
+
+修改最大连接数
+
+```mysql
+# 查看最大连接数: 默认151
+SHOW VARIABLES LIKE 'max_connections';
+```
+
+```
+[mysqld]
+max_connections = 1000
+```
+
+修改字符集和排序规则
+
+```
+[mysqld]
+character-set-server = utf8mb4
+collation-server = utf8mb4_general_ci
+```
+
+修改数据包大小：客户端和服务器一次通信中允许传输的数据包最大值
+
+```mysql
+# 查看可接受最大数据包大小: 67108864 == 64M
+show VARIABLES like 'max_allowed_packet%'; 
+```
+
+```
+[mysqld]
+max_allowed_packet = 200M
+```
+
+## MySQL 常用查询
+
+查看当前连接数
+
+```mysql
+SHOW STATUS LIKE 'Threads_connected';
+```
 
