@@ -6,7 +6,7 @@ category: 安装教程
 draft: false
 ---
 
-### 卸载mariadb
+## 卸载mariadb
 
 列出安装的mariadb rpm 包
 
@@ -20,7 +20,7 @@ rpm -qa | grep mariadb
 rpm -e --nodeps mariadb-libs
 ```
 
-### 安装MySQL源
+## 安装MySQL源
 
 下载 MySQL 源安装包：[MySQL Yum Repository](https://dev.mysql.com/downloads/repo/yum/)
 
@@ -59,7 +59,7 @@ mysql80-community/x86_64             MySQL 8.0 Community Server              465
 ------------------------------
 ```
 
-### 安装MySQL
+## 安装MySQL
 
 ```sh
 yum install -y \
@@ -104,7 +104,7 @@ mysql-community-client-plugins-8.0.28-1.el7.x86_64
 ------------------------------
 ```
 
-### 启动MySQL
+## 启动MySQL
 
 开机自启且立即启动
 
@@ -113,7 +113,7 @@ systemctl enable --now mysqld
 systemctl daemon-reload
 ```
 
-### 登录MySQL
+## 登录MySQL
 
 查看初始密码
 
@@ -140,4 +140,5 @@ use mysql;
 update user set host='%' where user='root';
 flush privileges;
 ```
+
 
