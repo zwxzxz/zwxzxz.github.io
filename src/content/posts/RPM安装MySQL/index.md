@@ -2,7 +2,6 @@
 title: RPM安装MySQL
 published: 2024-04-19
 tags: [MySQL, RPM安装, CentOS7]
-image: https://api.miaomc.cn/image/get
 category: 安装教程
 draft: false
 ---

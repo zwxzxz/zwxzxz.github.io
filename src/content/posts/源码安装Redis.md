@@ -3,6 +3,7 @@ title: 源码安装Redis
 published: 2024-04-17
 tags: [Redis, 源码安装, CentOS7]
 category: 安装教程
+image: https://www.dmoe.cc/random.php
 draft: false
 ---
 
