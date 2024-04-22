@@ -1,7 +1,7 @@
 ---
 title: Yum安装MySQL
 published: 2024-04-17
-tags: [MySQL, Yum安装]
+tags: [MySQL, Yum安装, Centos7]
 category: 安装教程
 draft: false
 ---
