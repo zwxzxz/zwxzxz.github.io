@@ -2,6 +2,7 @@
 title: CentOS7 使用NTP搭建时间同步服务器
 published: 2024-04-22
 tags: [NTP, 时间同步, CentOS7]
+image: https://api.miaomc.cn/image/get?4
 category: 解决方案
 draft: false
 ---

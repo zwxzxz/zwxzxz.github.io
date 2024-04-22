@@ -4,6 +4,7 @@ published: 2024-04-17
 tags: [markdown, md]
 category: 分享
 draft: false
+image: https://api.miaomc.cn/image/get?8
 ---
 
 # 一级目录

@@ -4,6 +4,7 @@ published: 2024-04-17
 tags: [MySQL, Yum安装, CentOS7]
 category: 安装教程
 draft: false
+image: https://api.miaomc.cn/image/get?9
 ---
 
 ## 卸载mariadb
