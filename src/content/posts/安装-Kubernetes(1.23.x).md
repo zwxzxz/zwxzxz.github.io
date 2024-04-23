@@ -138,7 +138,7 @@ lsmod | grep br_netfilter \
 ```
 
 ```sh
-# 将桥接的IPv4流量传递到iptables链
+# 将桥接的IPv4流量传递到iptables链(保证容器网络正常)
 cat > /etc/sysctl.d/99-kubernetes-cri.conf << EOF
 net.bridge.bridge-nf-call-ip6tables=1
 net.bridge.bridge-nf-call-iptables=1
