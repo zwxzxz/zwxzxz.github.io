@@ -154,6 +154,17 @@ sysctl net.bridge.bridge-nf-call-iptables \
 ```
 
 ```sh
+# 配置 NetworkManager 不接管 calico 的网卡(全节点执行)
+
+cat <<EOF>> /etc/NetworkManager/conf.d/calico.conf
+[keyfile]
+unmanaged-devices=interface-name:cali*;interface-name:tunl*;interface-name:vxlan.calico;interface-name:vxlan-v6.calico;interface-name:wireguard.cali;interface-name:wg-v6.cali
+EOF
+
+systemctl restart NetworkManager
+```
+
+```sh
 # 时间同步（公有云跳过）
 
 yum install chrony -y
@@ -326,14 +337,6 @@ systemctl status kubelet #启动成功
 
 ```sh
 # 部署网络插件(master节点运行)
-
-# 配置 NetworkManager 不接管 calico 的网卡(全节点执行)
-cat <<EOF>> /etc/NetworkManager/conf.d/calico.conf
-[keyfile]
-unmanaged-devices=interface-name:cali*;interface-name:tunl*;interface-name:vxlan.calico;interface-name:vxlan-v6.calico;interface-name:wireguard.cali;interface-name:wg-v6.cali
-EOF
-
-systemctl restart NetworkManager
 
 # 注意：Kubernetes 和 Calico 的版本对应关系(https://docs.tigera.io/calico/latest/getting-started/kubernetes/requirements) 3.25支持1.23到1.26
 # 其他版本地址：https://github.com/projectcalico/calico/blob/master/manifests/calico.yaml
