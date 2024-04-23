@@ -2,7 +2,7 @@
 title: 安装 Kubernetes(1.23.x)
 published: 2024-04-22
 description: 安装 Kubernetes 1.23版本, 使用docker作为运行时接口
-tags: [Kubernetes, docker, iptable, 单主节点, CentOS7]
+tags: [Kubernetes, docker, 单主节点, iptable, calico, CentOS7]
 category: 安装教程
 draft: false
 image: https://api.miaomc.cn/image/get?1
