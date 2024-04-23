@@ -145,10 +145,9 @@ net.bridge.bridge-nf-call-iptables=1
 net.ipv4.ip_forward=1
 EOF
 # 生效
-sysctl --system # /etc/sysctl.conf  net.ipv4.ip_forward修改1
-sysctl -p /etc/sysctl.d/99-kubernetes-cri.conf
+sysctl --system
 
-# 验证是否生效
+# 验证是否生效,都要=1(有 =0 时, /etc/sysctl.conf文件里有相同配置=0,修改为1, 或直接/etc/sysctl.conf追加99-kubernetes-cri.conf配置内容)
 sysctl net.bridge.bridge-nf-call-iptables \
 	net.bridge.bridge-nf-call-ip6tables \
 	net.ipv4.ip_forward
@@ -177,8 +176,7 @@ docker-ce.x86_64            3:23.0.6-1.el7                     docker-ce-stable
 ```
 
 ```sh
-# 卸载旧版本 Docker
-
+# 卸载远古旧版本 Docker
 yum -y remove docker \
         docker-client \
         docker-client-latest \
@@ -187,12 +185,27 @@ yum -y remove docker \
         docker-latest-logrotate \
         docker-logrotate \
         docker-engine
+
+# 卸载最近旧版本(没安装过不用卸载)
+yum -y remove docker-ce \
+      docker-ce-cli \
+      containerd.io \
+      docker-buildx-plugin \
+      docker-compose-plugin \
+      docker-ce-rootless-extras
+
+# 删除目录(可能指定存储其他位置,没安装过不用卸载)
+rm -rf /var/lib/docker
+rm -rf /var/lib/containerd
 ```
 
 ```sh
 # 安装 Docker
 
 yum install docker-ce-24.0.0 -y
+
+# 查看安装版本及依赖
+yum list installed | grep docker
 
 # 修改配置文件
 vi /etc/docker/daemon.json
