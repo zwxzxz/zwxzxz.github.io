@@ -352,10 +352,12 @@ kubectl get nodes
 ```sh
 yum install bash-completion -y
 
-! grep -q kubectl "$HOME/.bashrc" && echo "source /usr/share/bash-completion/bash_completion" >>"$HOME/.bashrc"
+source /usr/share/bash-completion/bash_completion
+
 ! grep -q kubectl "$HOME/.bashrc" && echo "source <(kubectl completion bash)" >>"$HOME/.bashrc"
 ! grep -q kubeadm "$HOME/.bashrc" && echo "source <(kubeadm completion bash)" >>"$HOME/.bashrc"
 ! grep -q crictl "$HOME/.bashrc" && echo "source <(crictl completion bash)" >>"$HOME/.bashrc"
+
 source "$HOME/.bashrc"
 ```
 
