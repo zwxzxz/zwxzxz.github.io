@@ -5,7 +5,7 @@ description: 命令死都记不住, 写个文档一键复制
 tags: [Git]
 category: 分享
 draft: false
-image: https://api.miaomc.cn/image/get?6
+image: https://api.miaomc.cn/image/get?9
 ---
 
 ## 设置用户名和邮箱

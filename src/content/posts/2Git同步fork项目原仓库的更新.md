@@ -4,7 +4,7 @@ published: 2024-04-15
 tags: [Git]
 category: 迎刃而解
 draft: false
-image: https://api.miaomc.cn/image/get?7
+image: https://api.miaomc.cn/image/get?2
 ---
 
 1. 查看当前仓库配置的远程仓库

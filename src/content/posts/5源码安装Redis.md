@@ -4,7 +4,7 @@ published: 2024-04-17
 tags: [Redis, 源码安装, CentOS7]
 category: 安装教程
 draft: false
-image: https://api.miaomc.cn/image/get?2
+image: https://api.miaomc.cn/image/get?5
 ---
 
 ### 安装依赖

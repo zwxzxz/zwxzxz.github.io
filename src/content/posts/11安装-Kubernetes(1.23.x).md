@@ -5,7 +5,7 @@ description: 安装 Kubernetes 1.23版本, 使用docker作为运行时接口
 tags: [Kubernetes, docker, 单主节点, iptable, calico, CentOS7]
 category: 安装教程
 draft: false
-image: https://api.miaomc.cn/image/get?1
+image: https://api.miaomc.cn/image/get?11
 ---
 
 ## 安装环境准备(所有节点)
@@ -196,18 +196,6 @@ yum -y remove docker \
         docker-latest-logrotate \
         docker-logrotate \
         docker-engine
-
-# 卸载最近旧版本(没安装过不用卸载)
-yum -y remove docker-ce \
-      docker-ce-cli \
-      containerd.io \
-      docker-buildx-plugin \
-      docker-compose-plugin \
-      docker-ce-rootless-extras
-
-# 删除目录(可能指定存储其他位置,没安装过不用卸载)
-rm -rf /var/lib/docker
-rm -rf /var/lib/containerd
 ```
 
 ```sh
@@ -311,7 +299,7 @@ kubeadm join 192.168.0.1:6443 --token z4ugzv.txit41bi3yd30egp \
 ```
 
 ```sh
-# 192.168.0.1(master)节点运行
+# master节点运行
 
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
@@ -327,9 +315,10 @@ kubectl get nodes
 kubeadm join 192.168.0.1:6443 --token z4ugzv.txit41bi3yd30egp \
 	--discovery-token-ca-cert-hash sha256:225cf235c1448cc41edc84747d2f7c9157d378bed66cc9fd3822450385ab5253
 
+systemctl status kubelet #启动成功
+
 #master查看
 kubectl get nodes
-systemctl status kubelet #启动成功
 
 # 如果忘记或者过期可以使用以下命令重新生成(master节点)
 # kubeadm token create --print-join-command

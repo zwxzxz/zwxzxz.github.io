@@ -4,6 +4,7 @@ published: 2024-04-19
 tags: [MySQL, RPM安装, CentOS7]
 category: 安装教程
 draft: false
+image: ./image-20240419160353800.png
 ---
 
 ## 卸载mariadb
