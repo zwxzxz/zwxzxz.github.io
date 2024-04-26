@@ -1,5 +1,5 @@
 ---
-title: K8S集群外Prometheus监控K8S资源
+title: K8S集群外Prometheus监控K8S pod资源
 published: 2024-04-26
 tags: [监控, prometheus, kubernetes]
 category: 解决方案
