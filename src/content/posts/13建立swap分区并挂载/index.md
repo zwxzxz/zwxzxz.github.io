@@ -2,7 +2,7 @@
 title: 建立swap分区并挂载
 published: 2024-04-24
 tags: [swap, 磁盘 , CentOS7]
-category: 系统操作
+category: 技术分享
 draft: false
 image: https://api.miaomc.cn/image/get?13
 ---
