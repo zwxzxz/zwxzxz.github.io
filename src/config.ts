@@ -31,7 +31,7 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',
+  avatar: 'assets/images/splatoon3-avatar.jpg',
   name: 'zwx',
   bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   links: [
