@@ -80,5 +80,5 @@ rpm -ivh mysql-community-server-8.0*.rpm
 
 ## 其他操作
 
-参考Yum安装MySQL文档步骤：[转跳点我](https://zwxzxz.github.io/posts/yum%E5%AE%89%E8%A3%85mysql/#%E5%90%AF%E5%8A%A8mysql)
+参考Yum安装MySQL文档步骤：[转跳点我](https://zwxzxz.github.io/posts/7yum%E5%AE%89%E8%A3%85mysql/#%E5%90%AF%E5%8A%A8mysql)
 
