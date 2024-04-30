@@ -11,6 +11,8 @@ image: https://api.miaomc.cn/image/get?15
 >场景：
 >
 >业务部署在 Kubernetes 中，监控不想部署在 K8S 里，想在 K8S 外的单独 Prometheus 监控到K8S内的pod
+>
+> 缺陷: Prometheus只能装在K8S节点里才可以访问POD IP
 
 ## 创建RBAC
 
