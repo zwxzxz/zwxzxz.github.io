@@ -1,5 +1,5 @@
 ---
-title: 安装phpRedisAdmin
+title: docker安装phpRedisAdmin
 published: 2024-04-13
 tags: [phpRedisAdmin, docker, docker-compose]
 image: https://api.miaomc.cn/image/get?1
