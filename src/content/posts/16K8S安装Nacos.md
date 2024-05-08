@@ -79,6 +79,9 @@ spec:
         # 模式:单实例
         - name: MODE
           value: standalone
+        # 暴露metrics数据: /nacos/actuator/prometheus
+        - name: MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE
+          value: "*"
         # 数据库信息
         - name: MYSQL_SERVICE_HOST
           valueFrom:
@@ -170,7 +173,11 @@ spec:
 kubectl apply -f nacos.yaml
 ```
 
-集群内访问地址：`nacos.default.svc.cluster.local:8848`
+集群内访问地址：
+
+- service domain: `nacos.default.svc.cluster.local:8848`
+
+- pod dns: `nacos-0.nacos.default.svc.cluster.local:8848`
 
 集群外访问地址：`节点IP:31848/nacos/`
 
