@@ -105,27 +105,27 @@ spec:
             configMapKeyRef:
               name: nacos-cm
               key: mysql.password
-          image: registry.cn-hangzhou.aliyuncs.com/kongxin/nacos-server:v2.2.3
-          imagePullPolicy: IfNotPresent
-          name: nacos
-          ports:
-          - containerPort: 8848
-            name: server
-            protocol: TCP
-          - containerPort: 9848
-            name: client-rpc
-            protocol: TCP
-          - containerPort: 9849
-            name: raft-rpc
-            protocol: TCP
-          # 资源限制
-          resources:
-            limits:
-              cpu: 2
-              memory: 2Gi
-            requests:
-              cpu: 100m
-              memory: 512Mi
+        image: registry.cn-hangzhou.aliyuncs.com/kongxin/nacos-server:v2.2.3
+        imagePullPolicy: IfNotPresent
+        name: nacos
+        ports:
+        - containerPort: 8848
+          name: server
+          protocol: TCP
+        - containerPort: 9848
+          name: client-rpc
+          protocol: TCP
+        - containerPort: 9849
+          name: raft-rpc
+          protocol: TCP
+        # 资源限制
+        resources:
+          limits:
+            cpu: 2
+            memory: 2Gi
+          requests:
+            cpu: 100m
+            memory: 512Mi
       restartPolicy: Always
 ---
 apiVersion: v1
@@ -133,11 +133,11 @@ kind: ConfigMap
 metadata:
   name: nacos-cm
 data:
-  mysql.host: "192.168.0.1"
+  mysql.host: "10.129.130.211"
   mysql.db.name: "nacos"
   mysql.port: "3306"
   mysql.user: "root"
-  mysql.password: "12345678"
+  mysql.password: "W5BvtSPrKqa/K)J"
 ---
 apiVersion: v1
 kind: Service
@@ -163,7 +163,7 @@ spec:
     targetPort: 9849
     nodePort: 31949
   selector:
-    app: nacos 
+    app: nacos
 ```
 
 ```sh
