@@ -60,6 +60,8 @@ mysql80-community/x86_64             MySQL 8.0 Community Server              465
 ------------------------------
 ```
 
+或使用国内源参考：https://mirrors.tuna.tsinghua.edu.cn/help/mysql/
+
 ## 安装MySQL
 
 ```sh
@@ -176,6 +178,27 @@ show VARIABLES like 'max_allowed_packet%';
 ```
 [mysqld]
 max_allowed_packet = 200M
+```
+
+InnoDB的缓冲池大小：物理内存的一半
+
+```
+[mysqld]
+innodb_buffer_pool_size=4GB
+```
+
+事务提交时的日志刷新行为：=2事务提交时，InnoDB 将日志缓冲区的日志刷新到磁盘上的日志文件，但不需要等待操作系统将日志文件写入磁盘
+
+```
+[mysqld]
+innodb_flush_log_at_trx_commit=2
+```
+
+每10次SQL/事务触发io
+
+```
+[mysqld]
+sync_binlog=10
 ```
 
 ## MySQL 常用查询
