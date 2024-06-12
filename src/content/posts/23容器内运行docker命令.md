@@ -134,6 +134,7 @@ docker run \
   -p 50000:50000 \
   -e JAVA_OPTS=-Duser.timezone=Asia/Shanghai \
   -v /data/jenkins_home:/var/jenkins_home \
+  # 主要实现地方
   -v /var/run/docker.sock:/var/run/docker.sock \
   -v /usr/bin/docker:/usr/bin/docker \
   registry.cn-hangzhou.aliyuncs.com/kongxin/jenkins:jenkins-jdk8
