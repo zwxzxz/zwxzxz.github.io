@@ -63,7 +63,7 @@ global:
 docker compose -f docker-compose-1.yaml up -d
 ```
 
-![image-20240612152643569](C:\Users\Frank\AppData\Roaming\Typora\typora-user-images\image-20240612152643569.png)
+![image-20240612152643569](https://zwx-blog-oss.oss-cn-hangzhou.aliyuncs.com/blog/image-20240612152643569.png)
 
 ### k8s内prometheus
 
@@ -111,4 +111,4 @@ scrape_configs:
 docker compose -f docker-compose-2.yaml up -d
 ```
 
-![image-20240612153353914](C:\Users\Frank\AppData\Roaming\Typora\typora-user-images\image-20240612153353914.png)
+![image-20240612153353914](https://zwx-blog-oss.oss-cn-hangzhou.aliyuncs.com/blog/image-20240612153353914.png)
