@@ -3,7 +3,7 @@ title: LVM逻辑卷 SSD作为HDD缓存
 published: 2024-06-18
 tags: [lvm]
 category: 技术分享
-draft: true
+draft: false
 image: https://api.miaomc.cn/image/get?26
 ---
 
